@@ -51,6 +51,24 @@ public class DotProductDemo {
         return sum;
     }
 
+
+//    static float dotProductScalar(float[] a, float[] b) {
+//        float s0 = 0, s1 = 0, s2 = 0, s3 = 0;
+//        int i = 0;
+//        for (; i <= a.length - 4; i += 4) {
+//            s0 += a[i] * b[i];
+//            s1 += a[i + 1] * b[i + 1];
+//            s2 += a[i + 2] * b[i + 2];
+//            s3 += a[i + 3] * b[i + 3];
+//        }
+//        float sum = s0 + s1 + s2 + s3;
+//        for (; i < a.length; i++) {
+//            sum += a[i] * b[i];
+//        }
+//        return sum;
+//
+//    }
+
     static float dotProductVector(float[] a, float[] b) {
         int i = 0;
         int bound = SPECIES.loopBound(a.length);
